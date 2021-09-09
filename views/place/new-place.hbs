@@ -1,0 +1,35 @@
+<div class="container">
+
+    <h1>Crear un nuevo lugar</h1>
+
+    <hr>
+
+    <form method="POST" action="/place/new-place">
+
+        <label>Nombre
+            <input name="name" type="text">
+        </label>
+        <br><br>
+
+        <div class="form-group">
+            <label for="type">Type</label>
+            <input type="text"  id="type" name="type" value="{{type}}">
+        </div>
+        <br></br>
+
+
+        {{!-- <label>Latitud
+            <input name="lat" type="text">
+        </label>
+        <br><br>
+
+        <label>Longitud
+            <input name="lng" type="text">
+        </label>
+        <br><br> --}}
+
+        <input type="submit" value="Crear lugar">
+
+    </form>
+
+</div>

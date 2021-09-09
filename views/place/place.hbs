@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Lugares</h1>
+    <hr>
+
+    {{#each place}}
+
+    <p>{{name}}
+        [<a href="/place/{{id}}">Tipo</a>]
+        <a href="/place/{{id}}/edit" class="btn btn-dark">Editar</a>
+        <a href="/place/{{id}}/delete" class="btn btn-dark">Borrar</a>
+    </p>
+
+    <hr style="opacity: .5;">
+
+    {{/each}}
+
+    <a href="/" class="btn btn-dark">Volver</a>
+</div>
